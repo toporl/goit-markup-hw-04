@@ -125,9 +125,21 @@ ul {
 /* hero */
 
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
   padding: 200px 0;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
   background-color: #2f303a;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .hero-title {
   width: 696px;
   margin: auto;
@@ -348,6 +360,8 @@ img {
 .filters-btn:focus {
   color: var(--white-text-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* project */
@@ -361,6 +375,12 @@ img {
 .project-item {
   flex-basis: calc((100% - 30px * 2) / 3);
   width: 370px;
+}
+
+.project-item:hover,
+project-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-link {
