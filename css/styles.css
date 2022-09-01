@@ -81,6 +81,7 @@ ul {
 .site-nav {
   display: flex;
   padding-left: 0;
+  align-self: center;
 }
 
 .nav-link {
@@ -113,6 +114,11 @@ ul {
 .contacts {
   display: flex;
   margin-left: auto;
+  align-items: center;
+}
+
+.nav-item-contact:not(:last-child) {
+  margin-right: 30px;
 }
 
 .contact-link {
@@ -127,6 +133,7 @@ ul {
 .icon-contacts {
   fill: #757575;
   margin-right: 10px;
+  align-items: center;
 }
 
 /* main index */
@@ -198,12 +205,16 @@ ul {
   display: flex;
 }
 
-.fearures-subtitle:not(:first-child) {
+.features-subtitle:not(:first-child) {
   margin-left: 30px;
 }
-.icon-fearures {
-  fill: #212121;
-  padding: 25 100;
+
+.features-bg {
+  display: flex;
+  justify-content: center;
+  background-color: #f5f4fa;
+  padding: 25px 100px;
+  margin-bottom: 30px;
 }
 
 .subtitle {
@@ -310,12 +321,12 @@ img {
   height: 44px;
   align-items: center;
   justify-content: center;
-  background-color: var(--white-text-color);
   border-radius: 50%;
 }
 
-.social-icon {
+.social-link .link {
   fill: #afb1b8;
+  background-color: var(--white-text-color);
 }
 
 .social-link:hover,
@@ -328,13 +339,44 @@ img {
   fill: #ffffff;
 }
 
-/* footer */
+/* Clients */
+
+.client {
+  display: flex;
+  gap: 30px;
+}
+
+.client-link {
+  display: flex;
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4%;
+  fill: #afb1b8;
+}
+
+
+
+.client-link:hover,
+.client-link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/* footer adress*/
 
 .footer {
   background-color: #2f303a;
   font-style: normal;
+}
+
+.flex {
+  display: flex;
+}
+
+.left {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-right: 70px;
 }
 
 .footer-logo {
@@ -371,6 +413,29 @@ img {
 
 .footer-address:not(:first-child) {
   margin-top: 9px;
+}
+
+/* footer join */
+
+.center {
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+
+.join {
+  color: var(--white-text-color);
+  font-style: normal;
+  margin-bottom: 20px;
+}
+
+.join-list-link {
+  display: flex;
+  gap: 10px;
+}
+
+.social-link .down {
+  fill: var(--white-text-color);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* Main portfolio */
