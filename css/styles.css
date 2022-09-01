@@ -103,8 +103,11 @@ ul {
 .nav-link:hover,
 .nav-link:focus,
 .contact-link:hover,
-.contact-link:focus {
+.contact-link:focus,
+.contact-link:focus .icon-contacts,
+.contact-link:hover .icon-contacts {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .contacts {
@@ -119,6 +122,11 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+
+.icon-contacts {
+  fill: #757575;
+  margin-right: 10px;
 }
 
 /* main index */
@@ -193,6 +201,10 @@ ul {
 .fearures-subtitle:not(:first-child) {
   margin-left: 30px;
 }
+.icon-fearures {
+  fill: #212121;
+  padding: 25 100;
+}
 
 .subtitle {
   margin-bottom: 10px;
@@ -264,6 +276,10 @@ img {
   margin-left: 30px;
 }
 
+.description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .name {
   font-weight: 500;
   font-size: 16px;
@@ -279,12 +295,39 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 16px;
 }
 
-.description {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.socials {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
+
+.social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white-text-color);
+  border-radius: 50%;
+}
+
+.social-icon {
+  fill: #afb1b8;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: #2196f3;
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: #ffffff;
+}
+
 /* footer */
 
 .footer {
