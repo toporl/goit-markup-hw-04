@@ -105,8 +105,9 @@ ul {
 .nav-link:focus,
 .contact-link:hover,
 .contact-link:focus,
+.contact-link:hover .icon-contacts 
 .contact-link:focus .icon-contacts,
-.contact-link:hover .icon-contacts {
+{
   color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -122,6 +123,8 @@ ul {
 }
 
 .contact-link {
+  display: flex;
+  align-items: center;
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -153,6 +156,7 @@ ul {
   background-color: #2f303a;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
@@ -212,9 +216,10 @@ ul {
 .features-bg {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #f5f4fa;
-  padding: 25px 100px;
   margin-bottom: 30px;
+  height: 120px;
 }
 
 .subtitle {
@@ -330,7 +335,7 @@ img {
 }
 
 .social-link:hover,
-.social-link:focus {
+.social-link:focus{
   background-color: #2196f3;
 }
 
@@ -348,13 +353,19 @@ img {
 
 .client-link {
   display: flex;
-  padding: 16px 32px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4%;
   fill: #afb1b8;
 }
 
-
+.client-list-link{
+ width: 170px;
+ height: 92px;
+}
 
 .client-link:hover,
 .client-link:focus {
@@ -365,17 +376,17 @@ img {
 /* footer adress*/
 
 .footer {
+  padding: 60px 0;
   background-color: #2f303a;
   font-style: normal;
 }
 
 .flex {
   display: flex;
+  align-items: baseline;
 }
 
 .left {
-  padding-top: 60px;
-  padding-bottom: 60px;
   margin-right: 70px;
 }
 
@@ -411,16 +422,17 @@ img {
   text-decoration: none;
 }
 
+.social-link .down:hover,
+.social-link .down:focus{
+  background-color: var(--accent-color);
+}
+
 .footer-address:not(:first-child) {
   margin-top: 9px;
 }
 
 /* footer join */
 
-.center {
-  padding-top: 72px;
-  padding-bottom: 100px;
-}
 
 .join {
   color: var(--white-text-color);
@@ -433,10 +445,11 @@ img {
   gap: 10px;
 }
 
-.social-link .down {
+.social-link .down{
   fill: var(--white-text-color);
-  background: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
+
 
 /* Main portfolio */
 /* filters */
@@ -485,13 +498,14 @@ img {
   width: 370px;
 }
 
-.project-item:hover,
-project-item:focus {
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-link {
+  display: block;
   text-decoration: none;
 }
 
