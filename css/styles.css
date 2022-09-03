@@ -105,8 +105,8 @@ ul {
 .nav-link:focus,
 .contact-link:hover,
 .contact-link:focus,
-.contact-link:hover .icon-contacts 
-.contact-link:focus .icon-contacts,
+.contact-link:hover .icon-contacts, 
+.contact-link:focus .icon-contacts
 {
   color: var(--accent-color);
   fill: var(--accent-color);
